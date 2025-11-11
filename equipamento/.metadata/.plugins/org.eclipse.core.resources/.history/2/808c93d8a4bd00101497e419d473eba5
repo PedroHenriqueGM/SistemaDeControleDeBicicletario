@@ -1,0 +1,5 @@
+package com.ms.equipamento.controllers;
+import org.springframework.web.bind.annotation.RestController;
+public class EquipamentoController {
+
+}

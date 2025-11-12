@@ -14,11 +14,10 @@ public class Totem {
 
     private String localizacao;
 
-    // usando o OneToMany pois o totem tem muitas trancas
+    // usando o OneToMany pois um totem tem muitas trancas
     @OneToMany(mappedBy = "totem", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Tranca> trancas = new ArrayList<>();
 
-  
     public Long getId() {
         return id;
     }
